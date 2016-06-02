@@ -1,0 +1,124 @@
+    1  ansible
+    2  pip install ansible
+    3  sudo pip install ansible
+    4  ansible
+    5  ansible -c local
+    6  ansible localhost -c local
+    7  ansible localhost -c local -v
+    8  ansible localhost -c local -m ping
+    9  ansible -m ping
+   10  ansible localhost -m ping
+   11  ansible localhost -a "/bin/echo hello"
+   12  yum list | grep java7
+   13  yum list | grep java8
+   14  yum list | grep java
+   15  sudo yum install java-1.8.0-openjdk-devel.x86_64
+   16  java -version
+   17  yum list installed | grep java
+   18  yum remove java-1.7.0-openjdk.x86_64
+   19  sudo yum remove java-1.7.0-openjdk.x86_64
+   20  java -version
+   21  javac
+   22  echo $JAVA_HOME
+   23  ls /usr/lib/jvm
+   24  ls /usr/lib/jvm/jre
+   25  ls /usr/lib/jvm/jre/bin
+   26  sudo service docker start
+   27  mkdir showdocker
+   28  clear
+   29  vi Dockerfile
+   30  docker build 
+   31  docker build --help
+   32  docker build -t shimi1 .
+   33  clear
+   34  docker build -t shimi2 .
+   35  docker images
+   36  vi Dockerfile
+   37  docker build -t shimi2 .
+   38  docker build -t shimi3 .
+   39  docker images
+   40  vi Dockerfile
+   41  docker build -t shimi4 .
+   42  vi Dockerfile
+   43  docker build -t shimi4 .
+   44  vi Dockerfile
+   45  docker build -t shimi4 .
+   46  docker images
+   47  docker
+   48  docker run -t shimi4 /usr/bin/sh
+   49  docker run -t shimi4 mc
+   50  docker run -i -t shimi4 mc
+   51  docker ps
+   52  vi Dockerfile 
+   53  yum list  | grep openjdk
+   54  cat Dockerfile
+   55  docker kill $(docker ps -q)
+   56  docker ps
+   57  docker ps -a
+   58  docker rm  $(docker ps -q -a)
+   59  yum list | grep jdk
+   60  vi Dockerfile
+   61  docker build -t tomcat .
+   62  docker images
+   63  docker run -i -t tomcat
+   64  docker ps -a
+   65  docker rm --help
+   66  docker ps -q
+   67  docker ps -q -a
+   68  vi Dockerfile
+   69  docker rm -f $(docker ps -q -a)
+   70  docker build -t tomcat .
+   71  docker run -p 8080:8080 -i -t tomcat
+   72  docker ps
+   73  docker ps -a
+   74  docker run -d -p 8080:8080 -i -t tomcat
+   75  docker ps -a
+   76  docker ps 
+   77  docker rm -f $(docker ps -q -a)
+   78  vi Dockerfile
+   79  docker build -t tomcat .
+   80  docker run -d -p 8080:8080 -t tomcat
+   81  docker ps 
+   82  curl http://localhost:8080
+   83  curl http://localhost:8081
+   84  cd ..
+   85  cd ec2-user/
+   86  vi set.yml
+   87  ansible-playbook set.yml 
+   88  vi set.yml 
+   89  ansible-playbook set.yml 
+   90  vi set.yml 
+   91  ansible-playbook set.yml 
+   92  ls
+   93  cp set.yml course/setup.yml 
+   94  cd course
+   95  git status
+   96  git add .
+   97  git commit -m "jen"
+   98  git push
+   99  git pull
+  100  vi setup.yml 
+  101  git pull
+  102  vi setup.yml 
+  103  git add .
+  104  git commit -m "
+sdfsdf"
+  105  git commit -m "dsffd"
+  106  cp ../set.yml setup.yml
+  107  git add .
+  108  git commit -m "SDfsfd"
+  109  git push
+  110  service jenkins status
+  111  sudo service jenkins status
+  112  sudo service jenkins start
+  113  sudo service jenkins status
+  114  ls /var/log/jenkins/
+  115  sudo ls /var/log/jenkins/
+  116  sudo cat /var/log/jenkins/jenkins.log
+  117  docker ps -a
+  118  docker rm -f $(docker ps -q -a)
+  119  sudo service jenkins start
+  120  sudo service jenkins status
+  121  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  122  history
+  123  history > history.dump
