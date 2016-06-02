@@ -5,4 +5,4 @@
     become: yes
     become_method: sudo
   - name: create image
-    docker_image: path="/home/ec2-user/dock" name="petclin" state="present"
+    docker_image: path="/home/ec2-user/dock" name="petclin" state="present" tag="ll" 
